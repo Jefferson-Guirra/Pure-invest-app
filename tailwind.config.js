@@ -10,6 +10,19 @@ module.exports = {
   ],
   theme: {
     extend: {},
+    colors:{
+      'primary-green': '#22c55e',
+      'second-green': '#064e3b',
+      'white': '#fff',
+      'black': '#000000'
+    },
+    fontFamily:{
+      roboto: ['Roboto', 'sans-serif'],
+    }
   },
+  content: [
+    './pages/**/*.tsx',
+    './components/**/*.tsx',
+  ],
   plugins: [],
 }

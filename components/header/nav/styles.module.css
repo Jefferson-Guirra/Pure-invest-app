@@ -1,0 +1,12 @@
+.header {
+  @apply flex items-center bg-primary-green text-white  font-black justify-between p-4
+}
+
+
+.nav{
+  @apply flex gap-3 max-[850px]:hidden
+}
+
+.nav a {
+  @apply  duration-500 py-1 px-5 hover:text-second-green
+}
