@@ -1,10 +1,10 @@
 .header {
-  @apply flex items-center bg-primary-green text-white  font-black justify-between p-4
+  @apply flex items-center bg-primary-green text-white  font-black gap-10
 }
 
 
 .nav{
-  @apply flex gap-3 max-[850px]:hidden
+  @apply flex gap-3 max-[800px]:hidden
 }
 
 .nav a {

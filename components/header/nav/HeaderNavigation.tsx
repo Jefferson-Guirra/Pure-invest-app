@@ -10,13 +10,10 @@ export const HeaderNavigation = () => {
       </article>
   
       <nav className={ styles.nav}> 
-        <Link href="*" className=''> 
-          Nossos Produtos
-        </Link>
         <Link href="*"> Home </Link>
         <Link href="*"> Explorar </Link>
-        <Link href="*"> Dicas </Link>
         <Link href='*'>Quem somos</Link>
+        <Link href='*'>Blog</Link>
       </nav>
     </header>
   )

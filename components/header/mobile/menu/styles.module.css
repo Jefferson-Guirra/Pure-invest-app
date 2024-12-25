@@ -1,0 +1,35 @@
+.menu-container {
+  @apply
+  
+  cursor-pointer
+  flex-col
+  w-10
+  gap-1
+  overflow-hidden
+  py-4
+  hidden
+
+  max-[800px]:flex
+}
+
+.menu-container span {
+  @apply
+   block
+   w-full
+   bg-white
+   h-0.5
+   rounded-sm
+
+}
+
+.menu-container .line-2 {
+  @apply
+
+  translate-x-1
+}
+
+.menu-container .line-3 {
+  @apply
+
+  translate-x-1.5
+}

@@ -1,0 +1,25 @@
+.container {
+  @apply
+
+  fixed
+  top-0
+  bg-primary-green 
+  text-white  
+  font-black 
+  w-full
+ 
+}
+
+.content {
+
+  @apply
+  flex 
+  p-4
+  items-center 
+  gap-10
+  max-w-7xl
+  m-auto
+
+  max-[800px]:justify-between
+
+}
