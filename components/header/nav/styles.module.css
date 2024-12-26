@@ -1,5 +1,5 @@
 .header {
-  @apply flex items-center bg-primary-green text-white  font-black gap-10
+  @apply flex items-center text-white  font-black gap-10
 }
 
 
@@ -8,5 +8,10 @@
 }
 
 .nav a {
-  @apply  duration-500 py-1 px-5 hover:text-second-green
+  @apply  
+  
+  duration-700
+  py-1 
+  px-5 
+  hover:text-tertiary-dark
 }
