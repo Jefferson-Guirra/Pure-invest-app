@@ -15,6 +15,7 @@
   @apply
   flex 
   p-4
+  px-6
   items-center 
   gap-10
   max-w-7xl
@@ -23,3 +24,5 @@
   max-[800px]:justify-between
 
 }
+
+

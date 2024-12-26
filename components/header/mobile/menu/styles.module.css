@@ -5,10 +5,11 @@
   flex-col
   w-10
   gap-1
+  z-50
   overflow-hidden
   py-4
   hidden
-
+  [&>*]:hover:bg-tertiary-dark
   max-[800px]:flex
 }
 
@@ -19,7 +20,20 @@
    bg-white
    h-0.5
    rounded-sm
+   duration-700
 
+}
+
+.menu-container .line-1 {
+  @apply
+
+  rotate-0
+}
+
+.menu-container .active-line-1{
+  @apply
+
+  rotate-45
 }
 
 .menu-container .line-2 {
@@ -28,8 +42,59 @@
   translate-x-1
 }
 
+.menu-container .active-line-2 {
+  @apply
+
+  opacity-0
+}
+
 .menu-container .line-3 {
   @apply
 
   translate-x-1.5
 }
+
+.menu-container .active-line-3 {
+  @apply
+
+  -translate-y-3
+  translate-x-0
+  -rotate-45
+}
+
+
+.content-mobile {
+
+  @apply
+  
+  fixed
+  top-0
+  left-0
+  w-full
+  h-screen
+  z-40
+  bg-second-dark
+  flex
+  flex-col
+  gap-2
+  duration-700
+  translate-x-full
+  items-center
+  justify-center
+
+  max-[800px]:text-xl
+
+}
+
+.active-content-mobile {
+  @apply
+  translate-x-0
+}
+.content-mobile a {
+  @apply
+  
+  duration-700
+  hover:text-tertiary-dark
+  py-4
+}
+

@@ -5,6 +5,8 @@
 
 body {
   padding-top: 64px;
+  position: relative;
+  overflow: hidden;
 }
 
 
