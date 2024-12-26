@@ -4,14 +4,21 @@
 
 
 body {
-  padding-top: 64px;
   position: relative;
   overflow: hidden;
 }
 
 
-@media (max-width:800px) {
-  body {
-    padding-top: 78px;
-  }
+:root {
+  --color-purple: oklch(66% 0.2 306);
+  --color-lavender: oklch(70% 0.15 306);
+  --color-pink: oklch(70% 0.15 348);
+  --color-yellow: oklch(85% 0.1 108);
+  --color-cyan: oklch(85% 0.1 190);
+  --color-cyan-light: oklch(88% 0.03 190);
+  --color-background: oklch(16% 0.011 248);
+  --color-text: oklch(75% 0.018 248);
+  --color-text-bright: #fff;
+  background-color: var(--color-background);
+  color-scheme: dark;
 }
