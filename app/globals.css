@@ -19,6 +19,4 @@ body {
   --color-background: oklch(16% 0.011 248);
   --color-text: oklch(75% 0.018 248);
   --color-text-bright: #fff;
-  background-color: var(--color-background);
-  color-scheme: dark;
 }

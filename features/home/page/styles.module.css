@@ -17,22 +17,26 @@
 
 .content-text h2 {
   line-height: 4rem;
+  @apply
+  [&>*]:hover:!text-cyan
 }
 
-.content-text h2:hover span {
+.content-text h2 span{
+  display: block;
+  margin-right: 7px;
   background: linear-gradient(45deg, var(--color-lavender), var(--color-cyan));
   color: transparent;
   background-clip: text;
   display: inline-block;
-}
-
-.content-text h2 span{
 
   @apply
   duration-700
-  text-cyan
 
 }
+.content-text h2:hover span {
+
+}
+
 .content-img{
   padding-top: 64px;
   @apply
@@ -41,9 +45,36 @@
   bg-second-dark
 }
 
-.content-img {
+.content-img div {
+  margin: 0 auto;
   @apply
-  shrink-0
+  !w-10/12
+
+}
+
+@media (max-width:1350px) {
+
+  .content-text {
+    font-size: 2rem;
+  }
+  
+}
+
+
+@media (max-width:850px) {
+
+  .content-text {
+    font-size: 1.7rem;
+  }
+  
+}
+
+@media (max-width:850px) {
+
+  .content-img div {
+    height: 90%;
+  }
+  
 }
 
 
