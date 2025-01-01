@@ -16,6 +16,7 @@
 }
 
 .content-text h2 {
+  animation: 1s to-bottom forwards;
   line-height: 4rem;
   @apply
   [&>*]:hover:!text-cyan
@@ -86,6 +87,21 @@
 
   .content-img {
     padding-top: 78px;
+  }
+  
+}
+
+
+@keyframes to-bottom  {
+
+  from {
+    opacity: 0;
+    transform: translate3d(0px, -70px,0px);
+  }
+
+  to {
+    opacity: initial;
+    transform: initial;
   }
   
 }
