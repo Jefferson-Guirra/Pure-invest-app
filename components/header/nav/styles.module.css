@@ -1,17 +1,66 @@
 .header {
-  @apply flex items-center text-white  font-black gap-10
+  @apply 
+  flex 
+  items-center 
+  text-white  
+  font-black 
+  gap-10 
+  justify-between 
+  flex-1
+  max-[800px]:flex-none
 }
 
+.header .logo {
+  opacity: 0;
+  animation: .7s show-opacity forwards;
+}
 
 .nav{
   @apply flex gap-3 max-[800px]:hidden
 }
 
 .nav a {
+  opacity: 0;
+  transform: translate3d(-50px,0,0);
   @apply  
-  
   duration-700
   py-1 
   px-5 
-  hover:text-tertiary-dark
+}
+
+.nav a:hover{
+  background: linear-gradient(45deg, var(--color-lavender), var(--color-cyan));
+  color: transparent;
+  background-clip: text;
+}
+
+.nav a:nth-child(1) {
+  animation: .7s to-right forwards;
+}
+
+.nav a:nth-child(2) {
+  animation: .7s to-right .1s forwards;
+}
+
+.nav a:nth-child(3) {
+  animation: .7s to-right .3s forwards;
+}
+
+.nav a:nth-child(4) {
+  animation: .7s to-right .5s forwards;
+}
+
+
+@keyframes to-right {
+  
+  to {
+    opacity: initial;
+    transform: initial;
+  }
+}
+
+@keyframes show-opacity {
+  to {
+    opacity: initial;
+  }
 }

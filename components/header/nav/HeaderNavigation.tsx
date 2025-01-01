@@ -5,9 +5,9 @@ import Link from 'next/link'
 export const HeaderNavigation = () => {
   return (
     <header className={styles.header}>
-      <article>
+      <Link className={styles.logo} href='/'>
         <p>Logo</p>
-      </article>
+      </Link>
   
       <nav className={ styles.nav}> 
         <Link href="*"> Home </Link>
